@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+<ui:composition template="/telaPrincipal.xhtml">
+	<ui:define name="conteudo">
+		<h3>
+			<p:outputLabel value="Cadastro de Colaborador" />
+
+			<h:panelGrid columns="2" cellpadding="7">
+
+				<h:outputLabel value="Nome:" />
+				<p:inputText value="#{ControleBean.colaborador.nome}" required="true" label="nome"/>
+
+				<h:outputLabel value="CPF:" />
+				<p:inputMask value="#{ControleBean.colaborador.cpf}" mask="999.999.999-99" required="true"/>
+
+				<h:outputLabel value="Opção de Café:" />
+				<p:inputTextarea value="#{ControleBean.opcaocafe.opcafe}" required="true" />
+
+			</h:panelGrid>
+
+			<p:commandButton value="Cadastrar" 
+					actionListener="#{ControleBean.salvar}" />
+		</h3>
+	</ui:define>
+</ui:composition>
+</html>
