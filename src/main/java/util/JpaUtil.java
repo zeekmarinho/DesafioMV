@@ -19,5 +19,4 @@ public class JpaUtil {
     public static void close() {
         factory.close();
     }
-
 }

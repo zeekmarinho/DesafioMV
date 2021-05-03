@@ -46,11 +46,7 @@ public class ControleBean {
 		this.listaColaborador = fachada.pesquisarColaborador(this.colaborador);
 	}
 	
-	//Listar Colaboradores
-	public void listar() {
-		this.listaColaborador = fachada.pesquisarColaborador(this.colaborador);
-	}
-	
+		
 	//Adicionar Opção de Café
 	public void adicionar() {		
 		

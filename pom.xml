@@ -60,6 +60,13 @@
 		<version>11.2.0</version>
 	</dependency>
 	
+	<!-- PROVIDER JPA(HIBERNATE) -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>4.3.0.Final</version>
+	</dependency>
+	
 	<!-- JERSEY -->
 	<dependency>
 		<groupId>com.sun.jersey</groupId>
